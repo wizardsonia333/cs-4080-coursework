@@ -1,0 +1,12 @@
+// ch. 3 challenge question 1, program 1
+// edge case: inner variable w/ the same name as an outer variable
+// testing if inner drink replaces the outer one permanently
+
+var drink = "diet coke";
+
+{
+    var drink = "celsius";
+    print drink;
+}
+
+print drink;

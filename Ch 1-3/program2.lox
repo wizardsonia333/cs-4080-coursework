@@ -1,0 +1,9 @@
+// ch. 3 challenge question 1, program 2
+// edge case: non-boolean if condition
+// testing if non-boolean values inside an if condition are allowed
+
+var name = "Sonia";
+
+if (name) {
+    print "Sonia exists.";
+}

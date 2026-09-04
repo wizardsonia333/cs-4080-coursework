@@ -1,0 +1,9 @@
+// ch. 3 challenge question 1, program 3
+// edge case: assigning to a variable that wasn't declared
+// testing if Lox will automatically create the variable or give an error
+
+print "Sonia's age is...";
+
+age = 21;
+
+print age;
