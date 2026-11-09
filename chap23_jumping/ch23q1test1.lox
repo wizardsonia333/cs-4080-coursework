@@ -1,0 +1,12 @@
+var dog = 2;
+
+switch (dog) {
+  case 1:
+    print "poodle";
+  case 2:
+    print "husky";
+  case 3:
+    print "maltese";
+  default:
+    print "unknown";
+}

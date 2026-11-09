@@ -1,0 +1,14 @@
+var i = 0;
+
+while (i < 4) {
+  i = i + 1;
+  {
+    var dog = "poodle";
+
+    if (i == 2) continue;
+
+    print dog;
+    print i;
+  }
+}
+print "done";
