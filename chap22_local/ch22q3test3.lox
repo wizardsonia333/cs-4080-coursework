@@ -1,0 +1,5 @@
+{
+  var cat = 5;
+  cat = 10;
+  print cat;
+}
