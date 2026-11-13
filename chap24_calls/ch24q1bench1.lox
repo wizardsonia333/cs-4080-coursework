@@ -1,0 +1,12 @@
+var start = clock();
+
+var poodles = 0;
+
+while (poodles < 1000000) {
+  poodles = poodles + 1;
+}
+
+print "total poodles:";
+print poodles;
+print "time:";
+print clock() - start;

@@ -1,0 +1,3 @@
+print "dog treats test";
+print dogTreats(5);
+print "done";

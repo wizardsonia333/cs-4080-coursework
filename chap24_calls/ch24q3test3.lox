@@ -1,0 +1,3 @@
+print "poodle error test";
+print dogTreats("poodle");
+print "done";

@@ -1,0 +1,4 @@
+print "absolute value test";
+print absolute(-8);
+print absolute(6);
+print "done";

@@ -1,0 +1,18 @@
+fun feedDog(treats) {
+  return treats + 1;
+}
+
+var start = clock();
+
+var treats = 0;
+var dogs = 0;
+
+while (dogs < 1000000) {
+  treats = feedDog(treats);
+  dogs = dogs + 1;
+}
+
+print "total treats:";
+print treats;
+print "time:";
+print clock() - start;

@@ -1,0 +1,4 @@
+print "square test";
+print square(5);
+print square(-3);
+print "done";

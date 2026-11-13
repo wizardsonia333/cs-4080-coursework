@@ -1,0 +1,4 @@
+print "square root test";
+print sqrt(49);
+print sqrt(81);
+print "done";
