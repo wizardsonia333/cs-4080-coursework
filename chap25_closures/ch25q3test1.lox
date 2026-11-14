@@ -1,0 +1,43 @@
+// challenge 3- using closures to represent vector objects
+
+// constructor- creates a vector with x & y coordinates
+fun makeVector(x, y) {
+
+  // adds another vector to this one
+  fun add(other) {
+    var newX = x + other(1);
+    var newY = y + other(2);
+    return makeVector(newX, newY);
+  }
+
+  // has access to vector's coordinates + addition method
+  fun getValue(choice) {
+    if (choice == 1) return x;
+    if (choice == 2) return y;
+    if (choice == 3) return add;
+    return nil;
+  }
+
+  // returns the closure (remembers x & y)
+  return getValue;
+}
+
+// creates 2 vectors
+var v1 = makeVector(2, 3);
+var v2 = makeVector(4, 5);
+
+// here calls v1's addition method to create 3rd vector
+var sum = v1(3)(v2);
+
+// prints the coords
+print "vector 1:";
+print v1(1);
+print v1(2);
+
+print "vector 2:";
+print v2(1);
+print v2(2);
+
+print "sum:";
+print sum(1);
+print sum(2);

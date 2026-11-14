@@ -1,0 +1,21 @@
+// benchmark 1: feeding dogs with a normal function
+// tests how fast normal functions run without closures
+// calls feedDog() 1 million times to count the treats given
+// helps see if skipping unnecessary closures improves performance
+
+fun feedDog(treats) {
+  return treats + 1;
+}
+
+var total = 0;
+var start = clock();
+
+for (var i = 0; i < 1000000; i = i + 1) {
+  total = feedDog(total);
+}
+
+var end = clock();
+
+print "normal function benchmark";
+print total;
+print end - start;

@@ -1,0 +1,21 @@
+// tests if each dog remembers its own number of treats
+
+var dog1;
+var dog2;
+
+// loops twice, once for each dog
+for (var treats = 1; treats <= 2; treats = treats + 1) {
+
+  // creates a function that remembers the treat count
+  fun showTreats() {
+    print treats;
+  }
+
+  // saves the function for each dog
+  if (treats == 1) dog1 = showTreats;
+  if (treats == 2) dog2 = showTreats;
+}
+
+// checks if each dog remembers its own treat count
+dog1();
+dog2();

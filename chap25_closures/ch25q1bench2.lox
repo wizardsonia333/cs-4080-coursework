@@ -1,0 +1,29 @@
+// benchmark 2: collecting treats with a closure
+// tests how fast functions that capture outside variables run
+// calls collectTreat() 1 million times to update the saved treat count
+// helps see if my optimization makes actual closures slower/faster
+
+fun makeTreatCounter() {
+  var treats = 0;
+
+  fun collectTreat() {
+    treats = treats + 1;
+    return treats;
+  }
+
+  return collectTreat;
+}
+
+var collect = makeTreatCounter();
+var total = 0;
+var start = clock();
+
+for (var i = 0; i < 1000000; i = i + 1) {
+  total = collect();
+}
+
+var end = clock();
+
+print "closure benchmark";
+print total;
+print end - start;
