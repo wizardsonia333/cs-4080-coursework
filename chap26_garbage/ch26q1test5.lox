@@ -1,0 +1,24 @@
+// tests strings/functions/closures
+
+print "welcome to the poodle palace";
+print "tiny" + " but mighty";
+
+fun makePoodle() {
+  var treats = 0;
+
+  fun begForTreat() {
+    treats = treats + 1;
+    return treats;
+  }
+
+  return begForTreat;
+}
+
+var poodle = makePoodle();
+
+print "treats demanded:";
+print poodle();
+print poodle();
+print poodle();
+
+print "the poodle is never satisfied :(";
