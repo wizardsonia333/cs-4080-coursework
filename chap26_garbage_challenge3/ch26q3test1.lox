@@ -1,0 +1,9 @@
+print "welcome to the poodle palace";
+
+var message = "poodle";
+
+for (var i = 0; i < 300; i = i + 1) {
+  message = message + "!";
+}
+
+print "garbage collection test finished!";
